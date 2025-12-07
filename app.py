@@ -29,7 +29,7 @@ def video_frame_callback(frame: av.VideoFrame) -> av.VideoFrame:
 
 def app():
     # S3 configuration - replace with your bucket
-    BUCKET_NAME = "your-streamlit-videos-2025 "
+    BUCKET_NAME = "your-streamlit-videos-2025"
     
     if "prefix" not in st.session_state:
         st.session_state["prefix"] = str(uuid.uuid4())
